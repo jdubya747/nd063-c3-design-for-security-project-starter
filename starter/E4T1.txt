@@ -2,4 +2,18 @@
 
 # Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
 
+Instance i-0472bf67465871119 is not compliant with rule 5.2.5 Ensure SSH MaxAuthTries is set to 4 or less, 1.0.0 CIS Ubuntu Linux 18.04 LTS Benchmark. Applicable profiles: Level 1 - Server, Level 2 - Workstation, Level 2 - Server, Level 1 - Workstation.
+
+Instance i-0472bf67465871119 is not compliant with rule 5.2.7 Ensure SSH HostbasedAuthentication is disabled, 1.0.0 CIS Ubuntu Linux 18.04 LTS Benchmark. Applicable profiles: Level 1 - Server, Level 2 - Workstation, Level 2 - Server, Level 1 - Workstation.
+
+Instance i-0472bf67465871119 is not compliant with rule 5.2.6 Ensure SSH IgnoreRhosts is enabled, 1.0.0 CIS Ubuntu Linux 18.04 LTS Benchmark. Applicable profiles: Level 1 - Server, Level 2 - Workstation, Level 2 - Server, Level 1 - Workstation.
+
+Instance i-0472bf67465871119 is not compliant with rule 5.2.2 Ensure SSH Protocol is set to 2, 1.0.0 CIS Ubuntu Linux 18.04 LTS Benchmark. Applicable profiles: Level 1 - Server, Level 2 - Workstation, Level 2 - Server, Level 1 - Workstation.
+
+Instance i-0472bf67465871119 is not compliant with rule 5.2.13 Ensure SSH LoginGraceTime is set to one minute or less, 1.0.0 CIS Ubuntu Linux 18.04 LTS Benchmark. Applicable profiles: Level 1 - Server, Level 2 - Workstation, Level 2 - Server, Level 1 - Workstation.
+
+
+
 # Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+
+We should encrypt the data at rest in the s3 bucket

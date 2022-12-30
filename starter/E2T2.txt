@@ -1,3 +1,11 @@
-Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+SSH is a major vulnerbility for our public web app hosting EC2 instance
 
-Bonus - provide recommendations on how to remediate the vulnerabilities.
+Instance i-0472bf67465871119 is not compliant with rule 5.2.5 Ensure SSH MaxAuthTries is set to 4 or less, 1.0.0 CIS Ubuntu Linux 18.04 LTS Benchmark. Applicable profiles: Level 1 - Server, Level 2 - Workstation, Level 2 - Server, Level 1 - Workstation.
+
+Instance i-0472bf67465871119 is not compliant with rule 5.2.7 Ensure SSH HostbasedAuthentication is disabled, 1.0.0 CIS Ubuntu Linux 18.04 LTS Benchmark. Applicable profiles: Level 1 - Server, Level 2 - Workstation, Level 2 - Server, Level 1 - Workstation.
+
+Instance i-0472bf67465871119 is not compliant with rule 5.2.6 Ensure SSH IgnoreRhosts is enabled, 1.0.0 CIS Ubuntu Linux 18.04 LTS Benchmark. Applicable profiles: Level 1 - Server, Level 2 - Workstation, Level 2 - Server, Level 1 - Workstation.
+
+Instance i-0472bf67465871119 is not compliant with rule 5.2.2 Ensure SSH Protocol is set to 2, 1.0.0 CIS Ubuntu Linux 18.04 LTS Benchmark. Applicable profiles: Level 1 - Server, Level 2 - Workstation, Level 2 - Server, Level 1 - Workstation.
+
+Instance i-0472bf67465871119 is not compliant with rule 5.2.13 Ensure SSH LoginGraceTime is set to one minute or less, 1.0.0 CIS Ubuntu Linux 18.04 LTS Benchmark. Applicable profiles: Level 1 - Server, Level 2 - Workstation, Level 2 - Server, Level 1 - Workstation.

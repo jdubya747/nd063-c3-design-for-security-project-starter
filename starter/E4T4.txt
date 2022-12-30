@@ -1,8 +1,14 @@
 
 # What additional architectural change can be made to reduce the internet facing attack surface of the web application instance.
+1) Use a NAT so that if an EC2 instance were compromised, it cannot go out to the internet and then back in or elsewhere
+2) Dont share roles across EC2 instances which have different business functions. Define a least previleged role for each instance based upon wht it needs to do.
+3) Move the Web Service Instance into the private subnet, the load balancer in the public proxies the traffic.
 
 # Assuming the IAM permissions for the S3 bucket are still insecure, would creating VPC private endpoints for S3 prevent the unauthorized access to the secrets bucket.
+No, even in private network, their will still be resources that are able to access the bucket within the private network. If those become compromised then the faulty IAM permissions will not stop intrusion.
 
 # Will applying default encryption setting to the s3 buckets encrypt the data that already exists?
+No it will not
 
 # What would happen if the original cloud formation templates are applied to this environment.
+Then are changes will be lost. This is called server drift.

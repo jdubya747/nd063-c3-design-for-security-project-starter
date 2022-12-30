@@ -1,13 +1,22 @@
 # Identify tools that will allow you to do the following:
 
 ## Scan infrastructure as code templates
-
+Open source Cfripper can scan cloudformation template code for security policy violations
+Open source Terrascan can be used for same purpose with Terraform
 ### Example vulnerability
+Exposure of AWS API keys and other secrets
+Overly permissive firewall rules and IAM policies
 
 ##Scan AMI’s or containers for OS vulnerabilities
+AWS inspector for vulnerbilities on EC2 instances, focusing on the OS and network
+Open source Trivy can be used for container scans
 
 ### Example vulnerability
+Allowing SSH login for the instance
+Known vulnerbility to opensource libraies such as log4j
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
+AWS Config
 
 ### Example vulnerability
+securityhub-ec2-ebs-encryption-by-default-3f12414e, ebs does not have encryption enabled by defeult. Result is there is data at rest in an unencrypted state.
